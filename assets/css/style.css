@@ -1,0 +1,19 @@
+.gone {
+    display: none
+}
+
+.hide {
+    visibility: hidden
+}
+
+.show {
+    visibility: visible
+}
+
+#userItems {
+    font-size: 25px
+}
+
+#enemyText {
+    margin-top: 0px;
+}

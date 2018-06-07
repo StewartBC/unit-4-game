@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid gone" id="win">
+        <div class="container">
+            <h1 class="display-4">Congratulations, you have beaten the League of Legends RPG!</h1>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid gone" id="lose">
+        <div class="container">
+            <h1 class="display-4">Oh no, you died! Feel free to refresh the page to try again.</h1>
+        </div>
+    </div>
+
+    <div class="container" id="whole">
+
+        <div class="row">
+            <div class="col-md-12" id="instructions">
+                <h2>Welcome to the Leauge of Legends RPG!</h2>
+                <p>Reach Level 10 to win. Select your champion below. You will begin at level 1 with 500 gold. Defeating enemy
+                    champions will reward expereince points and gold that you can use to buy items in the Item Shop to help
+                    you in your battles. Choose your items wisely. For instance, items that give magic damage will be useless
+                    on champions with no base magic damage. Good luck!</p>
+            </div>
+            <div class="col-md-12" id="champSelect">
+                <h2 id="welcome">Champion Select</h2>
+                <div id="championSelect" style="overflow-y: scroll; height:400px;"></div>
+                <div id="championSidebar"></div>
+                <button id="lock">Lock In</button>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Item Shop</h2>
+                <div id="shop"></div>
+                <div id="shopSidebar"></div>
+                <button id="buy">Purchase Item</button>
+                <div id="shopAlert"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <button id="start">Battle Opponent</button>
+                <div id="startAlert"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4" id="userPanel">
+                <h2 id="userText" class="hide">Champion Panel</h2>
+                <div id="userPanelPic"></div>
+                <div id="gold"></div>
+                <div id="championInfo"></div>
+                <div class="progress hide" id="userHealth">
+                    <div id="userBar" class="progress-bar" style="width: 100%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div id="userItems">
+                    <h3 id="yourItems" class="hide">Your Items:</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2 id="enemyText" class="hide">Your Opponent</h2>
+                <div id="enemyChampionPic"></div>
+                <div id="enemyChampion"></div>
+                <div class="progress hide" id="enemyHealth">
+                    <div id="enemyBar" class="progress-bar" style="width: 100%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <button id="attack" class="hide">Attack</button>
+            </div>
+            <div class="col-md-4">
+                <h2 id="battle" class="hide">Battle Text</h2>
+                <div id="battleText"></div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
