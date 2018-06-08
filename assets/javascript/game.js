@@ -1,3 +1,4 @@
+// array holding every champion with their attributes, picture location, and method to play their audio
 var champions = [
     aatrox = {
         name: "Aatrox",
@@ -2521,6 +2522,8 @@ var champions = [
     }
 ]
 
+
+// array to hold all of the items and their attributes as well as their picture
 var items = [
     healthPotion = {
         name: "Health Potion",
@@ -2593,6 +2596,7 @@ var items = [
     }
 ]
 
+// variable declaration
 var userIndex = 1000;
 var enemyChampionIndex = 1000;
 var userChampion = "";
@@ -2629,7 +2633,7 @@ var attackSound = new Audio("assets/audio/Attack.wav");
 var potionSound = new Audio("assets/audio/Potion.wav");
 var errorSound = new Audio("assets/audio/Error.mp3");
 
-
+// function to calculate user experience and change the experience progress bar
 function userExperience() {
     if (level === 1) {
         var bar = (experience / 100) * 100;
@@ -2661,6 +2665,7 @@ function userExperience() {
     }
 }
 
+// function to calculate enemy experience and change the enemy experience progress bar
 function enemyExperience() {
     if (level === 1) {
         var bar = (experience / 100) * 100;
@@ -2692,7 +2697,7 @@ function enemyExperience() {
     }
 }
 
-
+// function to calculate user health and change the user healthbar
 function userHealth() {
     if (userCurrentHealth / userTotalHealth > .9) {
         $("#userBar").width("90%");
@@ -2726,6 +2731,8 @@ function userHealth() {
     }   
 }
 
+
+// function to calculate enemy health and change the enemy healthbar
 function enemyHealth() {
     if (enemyCurrentHealth === enemyTotalHealth) {
         $("#enemyBar").width("100%");
@@ -2762,11 +2769,14 @@ function enemyHealth() {
     }
 }
 
+// function to print enemy champion information to the html
 function enemyChampionInfo() {
     $("#enemyChampion").html("");
     $("#enemyChampion").html("Name: " + enemyChampion + "<br>Attack: " + enemyAttack + "<br>Magic: " + enemyMagic + "<br>Armor: " + enemyArmor + "<br>Magic Resist: " + enemyMagicResist + "<br><br>Health: " + enemyCurrentHealth + "/" + enemyTotalHealth);
     $("#enemyLevel").html("<br>Level: " + enemyLevel);
 }
+
+// function to calculate user stats
 function calcStats() {
     userAttack = userAttack + champions[userIndex].attackGrowth;
     userMagic = userMagic + champions[userIndex].magicGrowth;
@@ -2776,12 +2786,14 @@ function calcStats() {
     userCurrentHealth += champions[userIndex].healthGrowth;
 }
 
+// function to print user champion information to the html
 function championInfo() {
     $("#championInfo").html("");
     $("#championInfo").html("Name: " + champions[userIndex].name + "<br>Gold: " + gold + "<br>Attack: " + userAttack + "<br>Magic: " + userMagic + "<br>Armor: " + userArmor + "<br>Magic Resist: " + userMagicResist + "<br>Health: " + userCurrentHealth + "/" + userTotalHealth);
     $("#userLevel").html("<br>Level: " + level);
 }
 
+// print all champion pictures to the html champion select
 for (j = 0; j < champions.length; j++) {
     var championButton = $("<button>");
     $(championButton).addClass("champion-button");
@@ -2790,12 +2802,15 @@ for (j = 0; j < champions.length; j++) {
     $("#championSelect").append(championButton);
 }
 
+
+// show champion stats when user clicks champion picture
 $(document).on("click", ".champion-button", function () {
     $("#championSidebar").text("");
     $("#championSidebar").html("Name: " + champions[$(this).attr("data-champion")].name + "<br>Attack: " + champions[$(this).attr("data-champion")].attack + "<br>Magic: " + champions[$(this).attr("data-champion")].magic + "<br>Armor: " + champions[$(this).attr("data-champion")].armor + "<br>Magic Resist: " + champions[$(this).attr("data-champion")].magicResist + "<br>Health: " + champions[$(this).attr("data-champion")].health);
     userIndex = $(this).attr("data-champion");
 });
 
+// change user stats and modify html after user locks in their selected champion
 $("#lock").on("click", function () {
     if (userIndex === 1000) {
         $("#championSidebar").html("Please click on a champion to see their stats before locking in.")
@@ -2833,6 +2848,7 @@ $("#lock").on("click", function () {
     userExperience();
 });
 
+// print item pictures to the item shop html
 for (m = 0; m < items.length; m++) {
     var itemButton = $("<button>");
     $(itemButton).addClass("item-button");
@@ -2841,6 +2857,7 @@ for (m = 0; m < items.length; m++) {
     $("#shop").append(itemButton)
 }
 
+// show item information when user clicks the item picture
 $(document).on("click", ".item-button", function () {
     itemAttribute = $(this).attr("data-item");
     $("#shopSidebar").text("");
@@ -2859,6 +2876,7 @@ $(document).on("click", ".item-button", function () {
     }
 });
 
+// change user stats and add item to user items array when the user successfully purchases an item
 $("#buy").on("click", function () {
     if (userIndex === 1000) {
         $("#shopAlert").html("You need to choose a champion before purchasing items.")
@@ -2925,6 +2943,7 @@ $("#buy").on("click", function () {
     }
 })
 
+// start the battle simulation when the user clicks start battle
 $("#start").on("click", function () {
     $("#shopAlert").text("");
     if (userIndex === 1000) {
@@ -2963,6 +2982,7 @@ $("#start").on("click", function () {
     }
 })
 
+// run attack simulation when the user attacks the enemy, print result to battle text
 $("#attack").on("click", function () {
     $("#shopAlert").text("");
     $("#battleText").text("");
