@@ -1,9 +1,21 @@
+body {
+    background-image: url("../images/Background.jpg");
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .gone {
     display: none
 }
 
 .hide {
     visibility: hidden
+}
+
+.jumbotron {
+    background: none
 }
 
 .show {
