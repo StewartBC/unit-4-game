@@ -3029,7 +3029,9 @@ $("#attack").on("click", function () {
             champions.splice(enemyChampionIndex, 1);
             if (experience >= 3000) {
                 var newLevel = 10;
-                victory.play();
+                setTimeout(function () {
+                    victory.play();
+                }, 2500)
                 $("#whole").addClass("gone");
                 $("#win").removeClass("gone");
             } else if (experience >= 2400) {
