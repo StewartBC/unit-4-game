@@ -2629,6 +2629,70 @@ var attackSound = new Audio("assets/audio/Attack.wav");
 var potionSound = new Audio("assets/audio/Potion.wav");
 var errorSound = new Audio("assets/audio/Error.mp3");
 
+
+function userExperience() {
+    if (level === 1) {
+        var bar = (experience / 100) * 100;
+        $("#userExperience").width(bar + "%")
+    } else if (level === 2) {
+        var bar = (experience / 300) * 100;
+        $("#userExperience").width(bar + "%");
+    } else if (level === 3) {
+        var bar = (experience / 500) * 100;
+        $("#userExperience").width(bar + "%");
+    } else if (level === 4) {
+        var bar = (experience / 800) * 100;
+        $("#userExperience").width(bar + "%");
+    } else if (level === 5) {
+        var bar = (experience / 1100) * 100;
+        $("#userExperience").width(bar + "%");
+    } else if (level === 6) {
+        var bar = (experience / 1500) * 100;
+        $("#userExperience").width(bar + "%");
+    } else if (level === 7) {
+        var bar = (experience / 1900) * 100;
+        $("#userExperience").width(bar + "%");
+    } else if (level === 8) {
+        var bar = (experience / 2400) * 100;
+        $("#userExperience").width(bar + "%");
+    } else if (level === 9) {
+        var bar = (experience / 3000) * 100;
+        $("#userExperience").width(bar + "%");
+    }
+}
+
+function enemyExperience() {
+    if (level === 1) {
+        var bar = (experience / 100) * 100;
+        $("#enemyExperience").width(bar + "%")
+    } else if (level === 2) {
+        var bar = (experience / 300) * 100;
+        $("#enemyExperience").width(bar + "%");
+    } else if (level === 3) {
+        var bar = (experience / 500) * 100;
+        $("#enemyExperience").width(bar + "%");
+    } else if (level === 4) {
+        var bar = (experience / 800) * 100;
+        $("#enemyExperience").width(bar + "%");
+    } else if (level === 5) {
+        var bar = (experience / 1100) * 100;
+        $("#enemyExperience").width(bar + "%");
+    } else if (level === 6) {
+        var bar = (experience / 1500) * 100;
+        $("#enemyExperience").width(bar + "%");
+    } else if (level === 7) {
+        var bar = (experience / 1900) * 100;
+        $("#enemyExperience").width(bar + "%");
+    } else if (level === 8) {
+        var bar = (experience / 2400) * 100;
+        $("#enemyExperience").width(bar + "%");
+    } else if (level === 9) {
+        var bar = (experience / 3000) * 100;
+        $("#enemyExperience").width(bar + "%");
+    }
+}
+
+
 function userHealth() {
     if (userCurrentHealth / userTotalHealth > .9) {
         $("#userBar").width("90%");
@@ -2700,7 +2764,8 @@ function enemyHealth() {
 
 function enemyChampionInfo() {
     $("#enemyChampion").html("");
-    $("#enemyChampion").html("Name: " + enemyChampion + "<br>Level: " + enemyLevel + "<br>Attack: " + enemyAttack + "<br>Magic: " + enemyMagic + "<br>Armor: " + enemyArmor + "<br>Magic Resist: " + enemyMagicResist + "<br>Health: " + enemyCurrentHealth + "/" + enemyTotalHealth);
+    $("#enemyChampion").html("Name: " + enemyChampion + "<br>Attack: " + enemyAttack + "<br>Magic: " + enemyMagic + "<br>Armor: " + enemyArmor + "<br>Magic Resist: " + enemyMagicResist + "<br><br>Health: " + enemyCurrentHealth + "/" + enemyTotalHealth);
+    $("#enemyLevel").html("<br>Level: " + enemyLevel);
 }
 function calcStats() {
     userAttack = userAttack + champions[userIndex].attackGrowth;
@@ -2713,7 +2778,8 @@ function calcStats() {
 
 function championInfo() {
     $("#championInfo").html("");
-    $("#championInfo").html("Name: " + champions[userIndex].name + "<br>Gold: " + gold + "<br>Level: " + level + "<br>Attack: " + userAttack + "<br>Magic: " + userMagic + "<br>Armor: " + userArmor + "<br>Magic Resist: " + userMagicResist + "<br>Health: " + userCurrentHealth + "/" + userTotalHealth);
+    $("#championInfo").html("Name: " + champions[userIndex].name + "<br>Gold: " + gold + "<br>Attack: " + userAttack + "<br>Magic: " + userMagic + "<br>Armor: " + userArmor + "<br>Magic Resist: " + userMagicResist + "<br>Health: " + userCurrentHealth + "/" + userTotalHealth);
+    $("#userLevel").html("<br>Level: " + level);
 }
 
 for (j = 0; j < champions.length; j++) {
@@ -2762,6 +2828,9 @@ $("#lock").on("click", function () {
     $("#yourItems").removeClass("hide");
     $("#userHealth").removeClass("hide");
     $("#userBar").addClass("bg-success");
+    $("#userLevel").removeClass("hide");
+    $("#userExperience").removeClass("hide");
+    userExperience();
 });
 
 for (m = 0; m < items.length; m++) {
@@ -2827,7 +2896,7 @@ $("#buy").on("click", function () {
             userItems.push(items[itemAttribute]);
             buySound.play();
             $("#userItems").append(items[itemAttribute].pic);
-        } else if (items[itemAttribute].hasOwnProperty("armor")) {
+        } else if (items[itemAttribute].hasOwnProperty("armorAdded")) {
             $("#shopAlert").html("You have purchased a " + items[itemAttribute].name + ". Your armor has been increased by " + items[itemAttribute].armorAdded + ".");
             userArmor = userArmor + items[itemAttribute].armor;
             gold = gold - items[itemAttribute].cost;
@@ -2886,8 +2955,11 @@ $("#start").on("click", function () {
         enemyChampionInfo();
         $("#enemyChampionPic").text("");
         $("#enemyChampionPic").append(champions[enemyChampionIndex].pic);
+        champions[enemyChampionIndex].audio();
+        $("#enemyExperience").removeClass("hide");
+        $("#enemyLevel").removeClass("hide");
+        enemyExperience();
         $("#start").addClass("hide");
-
     }
 })
 
@@ -2962,6 +3034,7 @@ $("#attack").on("click", function () {
                 userHealth();
                 calcStats();
             }
+            userExperience();
             championInfo();
             $("#start").removeClass("hide");
         }

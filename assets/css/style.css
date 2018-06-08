@@ -18,6 +18,10 @@ body {
     background: none
 }
 
+#userExperience {
+    background: white;
+}
+
 .show {
     visibility: visible
 }
