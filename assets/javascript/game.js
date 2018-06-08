@@ -2626,6 +2626,8 @@ var kill = new Audio("assets/audio/Kill.mp3");
 var defeat = new Audio("assets/audio/Defeat.mp3");
 var buySound = new Audio("assets/audio/Buy.wav");
 var attackSound = new Audio("assets/audio/Attack.wav");
+var potionSound = new Audio("assets/audio/Potion.wav");
+var errorSound = new Audio("assets/audio/Error.mp3");
 
 function userHealth() {
     if (userCurrentHealth / userTotalHealth > .9) {
@@ -2723,11 +2725,16 @@ for (j = 0; j < champions.length; j++) {
 }
 
 $(document).on("click", ".champion-button", function () {
+    $("#championSidebar").text("");
     $("#championSidebar").html("Name: " + champions[$(this).attr("data-champion")].name + "<br>Attack: " + champions[$(this).attr("data-champion")].attack + "<br>Magic: " + champions[$(this).attr("data-champion")].magic + "<br>Armor: " + champions[$(this).attr("data-champion")].armor + "<br>Magic Resist: " + champions[$(this).attr("data-champion")].magicResist + "<br>Health: " + champions[$(this).attr("data-champion")].health);
     userIndex = $(this).attr("data-champion");
 });
 
 $("#lock").on("click", function () {
+    if (userIndex === 1000) {
+        $("#championSidebar").html("Please click on a champion to see their stats before locking in.")
+        errorSound.play();
+    }
     champions[userIndex].audio();
     $("#startAlert").text("");
     userAttack = champions[userIndex].attack;
@@ -2786,8 +2793,10 @@ $(document).on("click", ".item-button", function () {
 $("#buy").on("click", function () {
     if (userIndex === 1000) {
         $("#shopAlert").html("You need to choose a champion before purchasing items.")
+        errorSound.play();
     } else if (gold < items[itemAttribute].cost) {
         $("#shopAlert").text("You don't have enough gold to purchase this item.");
+        errorSound.play();
     } else if (gold >= items[itemAttribute].cost) {
         if (items[itemAttribute].hasOwnProperty("healthRestore")) {
             if (userCurrentHealth <= userTotalHealth - 150) {
@@ -2795,11 +2804,13 @@ $("#buy").on("click", function () {
                 gold = gold - items[itemAttribute].cost;
                 $("#shopAlert").text("");
                 $("#shopAlert").html("You have purchased a Health Potion. Your health has been restored by 150 points.");
+                potionSound.play();
                 userHealth();
                 championInfo();
             } else {
                 $("#shopAlert").text("");
                 $("#shopAlert").text("Your current health is too high to purchase this item.");
+                errorSound.play();
             }
         }
         if (items[itemAttribute].hasOwnProperty("attackDamage")) {
@@ -2849,8 +2860,10 @@ $("#start").on("click", function () {
     $("#shopAlert").text("");
     if (userIndex === 1000) {
         $("#startAlert").text("You need to choose a champion before battling an opponent.")
+        errorSound.play();
     } else if (userItems.length === 0) {
         $("#startAlert").text("You should purchase an item before battling an opponent.")
+        errorSound.play();
     } else {
         enemyChampionIndex = Math.floor(Math.random() * champions.length);
         while (enemyChampionIndex == userIndex) {
