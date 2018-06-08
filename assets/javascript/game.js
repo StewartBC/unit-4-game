@@ -12,7 +12,10 @@ var champions = [
         magicResistGrowth: 2,
         healthGrowth: 85,
         pic: "<img src=\"assets/images/Aatrox.png\" alt=\"Aatrox\">",
-        audio: new Audio("assets/audio/Aatrox_Select.ogx")
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     ahri = {
         name: "Ahri",
@@ -27,7 +30,10 @@ var champions = [
         magicResistGrowth: 1,
         healthGrowth: 92,
         pic: "<img src=\"assets/images/Ahri.png\" alt=\"Ahri\">",
-        audio: new Audio("assets/audio/" + this.name + "_Select.ogx")
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
      akali = {
         name: "Akali",
@@ -42,7 +48,10 @@ var champions = [
         magicResistGrowth: 2,
         healthGrowth: 87,
         pic: "<img src=\"assets/images/Akali.png\" alt=\"Akali\">",
-        audio: new Audio("assets/audio/" + this.name + "_Select.ogx")
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     alistar = {
         name: "Alistar",
@@ -56,7 +65,11 @@ var champions = [
         armorGrowth: 5,
         magicResistGrowth: 4,
         healthGrowth: 100,
-        pic: "<img src=\"assets/images/Alistar.png\" alt=\"Alistar\">"
+        pic: "<img src=\"assets/images/Alistar.png\" alt=\"Alistar\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     amumu = {
         name: "Amumu",
@@ -70,7 +83,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 3,
         healthGrowth: 96,
-        pic: "<img src=\"assets/images/Amumu.png\" alt=\"Amumu\">"
+        pic: "<img src=\"assets/images/Amumu.png\" alt=\"Amumu\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     anivia = {
         name: "Anivia",
@@ -84,7 +101,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Anivia.png\" alt=\"Anivia\">"
+        pic: "<img src=\"assets/images/Anivia.png\" alt=\"Anivia\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     annie = {
         name: "Annie",
@@ -98,7 +119,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 94,
-        pic: "<img src=\"assets/images/Annie.png\" alt=\"Annie\">"
+        pic: "<img src=\"assets/images/Annie.png\" alt=\"Annie\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     ashe = {
         name: "Ashe",
@@ -112,7 +137,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 87,
-        pic: "<img src=\"assets/images/Ashe.png\" alt=\"Ashe\">"
+        pic: "<img src=\"assets/images/Ashe.png\" alt=\"Ashe\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     aurelionSol = {
         name: "Aurelion Sol",
@@ -126,7 +155,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 94,
-        pic: "<img src=\"assets/images/AurelionSol.png\" alt=\"Aurelion Sol\">"
+        pic: "<img src=\"assets/images/AurelionSol.png\" alt=\"Aurelion Sol\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     azir = {
         name: "Azir",
@@ -140,7 +173,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 2,
         healthGrowth: 87,
-        pic: "<img src=\"assets/images/Azir.png\" alt=\"Azir\">"
+        pic: "<img src=\"assets/images/Azir.png\" alt=\"Azir\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     bard = {
         name: "Bard",
@@ -154,7 +191,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 96,
-        pic: "<img src=\"assets/images/Bard.png\" alt=\"Bard\">"
+        pic: "<img src=\"assets/images/Bard.png\" alt=\"Bard\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     blitzcrank = {
         name: "Blitzcrank",
@@ -168,7 +209,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 92,
-        pic: "<img src=\"assets/images/Blitzcrank.png\" alt=\"Blitzcrank\">"
+        pic: "<img src=\"assets/images/Blitzcrank.png\" alt=\"Blitzcrank\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     brand = {
         name: "Brand",
@@ -182,7 +227,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Brand.png\" alt=\"Brand\">"
+        pic: "<img src=\"assets/images/Brand.png\" alt=\"Brand\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     braum = {
         name: "Braum",
@@ -196,7 +245,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 99,
-        pic: "<img src=\"assets/images/Braum.png\" alt=\"Braum\">"
+        pic: "<img src=\"assets/images/Braum.png\" alt=\"Braum\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     caitlyn = {
         name: "Caitlyn",
@@ -210,7 +263,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 89,
-        pic: "<img src=\"assets/images/Caitlyn.png\" alt=\"Caitlyn\">"
+        pic: "<img src=\"assets/images/Caitlyn.png\" alt=\"Caitlyn\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     camille = {
         name: "Camille",
@@ -224,7 +281,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Camille.png\" alt=\"Camille\">"
+        pic: "<img src=\"assets/images/Camille.png\" alt=\"Camille\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     cassiopeia = {
         name: "Cassiopeia",
@@ -238,7 +299,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 90,
-        pic: "<img src=\"assets/images/Cassiopeia.png\" alt=\"Cassiopeia\">"
+        pic: "<img src=\"assets/images/Cassiopeia.png\" alt=\"Cassiopeia\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     chogath = {
         name: "Cho'Gath",
@@ -252,7 +317,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 94,
-        pic: "<img src=\"assets/images/ChoGath.png\" alt=\"ChoGath\">"
+        pic: "<img src=\"assets/images/Chogath.png\" alt=\"ChoGath\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     corki = {
         name: "Corki",
@@ -266,7 +335,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 89,
-        pic: "<img src=\"assets/images/Corki.png\" alt=\"Corki\">"
+        pic: "<img src=\"assets/images/Corki.png\" alt=\"Corki\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     darius = {
         name: "Darius",
@@ -280,7 +353,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 3,
         healthGrowth: 93,
-        pic: "<img src=\"assets/images/Darius.png\" alt=\"Darius\">"
+        pic: "<img src=\"assets/images/Darius.png\" alt=\"Darius\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     diana = {
         name: "Diana",
@@ -294,10 +371,14 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 87,
-        pic: "<img src=\"assets/images/Diana.png\" alt=\"Diana\">"
+        pic: "<img src=\"assets/images/Diana.png\" alt=\"Diana\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     drMundo = {
-        name: "Dr. Mundo",
+        name: "Dr Mundo",
         attack: 67,
         magic: 0,
         armor: 37,
@@ -308,7 +389,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 5,
         healthGrowth: 98,
-        pic: "<img src=\"assets/images/DrMundo.png\" alt=\"DrMundo\">"
+        pic: "<img src=\"assets/images/DrMundo.png\" alt=\"DrMundo\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     draven = {
         name: "Draven",
@@ -322,7 +407,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Draven.png\" alt=\"Draven\">"
+        pic: "<img src=\"assets/images/Draven.png\" alt=\"Draven\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     ekko = {
         name: "Ekko",
@@ -336,7 +425,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 90,
-        pic: "<img src=\"assets/images/Ekko.png\" alt=\"Ekko\">"
+        pic: "<img src=\"assets/images/Ekko.png\" alt=\"Ekko\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     elise = {
         name: "Elise",
@@ -350,7 +443,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 86,
-        pic: "<img src=\"assets/images/Elise.png\" alt=\"Elise\">"
+        pic: "<img src=\"assets/images/Elise.png\" alt=\"Elise\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     evelynn = {
         name: "Evelynn",
@@ -364,7 +461,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Evelynn.png\" alt=\"Evelynn\">"
+        pic: "<img src=\"assets/images/Evelynn.png\" alt=\"Evelynn\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     ezreal = {
         name: "Ezreal",
@@ -378,7 +479,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 86,
-        pic: "<img src=\"assets/images/Ezreal.png\" alt=\"Ezreal\">"
+        pic: "<img src=\"assets/images/Ezreal.png\" alt=\"Ezreal\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     fiddlesticks = {
         name: "Fiddlesticks",
@@ -392,7 +497,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 2,
         healthGrowth: 93,
-        pic: "<img src=\"assets/images/Fiddlesticks.png\" alt=\"Fiddlesticks\">"
+        pic: "<img src=\"assets/images/Fiddlesticks.png\" alt=\"Fiddlesticks\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     fiora = {
         name: "Fiora",
@@ -406,7 +515,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 3,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Fiora.png\" alt=\"Fiora\">"
+        pic: "<img src=\"assets/images/Fiora.png\" alt=\"Fiora\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     fizz = {
         name: "Fizz",
@@ -420,7 +533,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 86,
-        pic: "<img src=\"assets/images/Fizz.png\" alt=\"Fizz\">"
+        pic: "<img src=\"assets/images/Fizz.png\" alt=\"Fizz\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     galio = {
         name: "Galio",
@@ -434,7 +551,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 93,
-        pic: "<img src=\"assets/images/Galio.png\" alt=\"Galio\">"
+        pic: "<img src=\"assets/images/Galio.png\" alt=\"Galio\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     gangplank = {
         name: "Gangplank",
@@ -448,7 +569,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Gangplank.png\" alt=\"Gangplank\">"
+        pic: "<img src=\"assets/images/Gangplank.png\" alt=\"Gangplank\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     garen = {
         name: "Garen",
@@ -462,7 +587,11 @@ var champions = [
         armorGrowth: 5,
         magicResistGrowth: 4,
         healthGrowth: 92,
-        pic: "<img src=\"assets/images/Garen.png\" alt=\"Garen\">"
+        pic: "<img src=\"assets/images/Garen.png\" alt=\"Garen\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     gnar = {
         name: "Gnar",
@@ -476,7 +605,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 85,
-        pic: "<img src=\"assets/images/Gnar.png\" alt=\"Gnar\">"
+        pic: "<img src=\"assets/images/Gnar.png\" alt=\"Gnar\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     gragas = {
         name: "Gragas",
@@ -490,7 +623,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 90,
-        pic: "<img src=\"assets/images/Gragas.png\" alt=\"Gragas\">"
+        pic: "<img src=\"assets/images/Gragas.png\" alt=\"Gragas\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     graves = {
         name: "Graves",
@@ -504,7 +641,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 86,
-        pic: "<img src=\"assets/images/Graves.png\" alt=\"Graves\">"
+        pic: "<img src=\"assets/images/Graves.png\" alt=\"Graves\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     hecarim = {
         name: "Hecarim",
@@ -518,7 +659,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Hecarim.png\" alt=\"Hecarim\">"
+        pic: "<img src=\"assets/images/Hecarim.png\" alt=\"Hecarim\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     heimerdinger = {
         name: "Herimerdinger",
@@ -532,7 +677,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 89,
-        pic: "<img src=\"assets/images/Heimerdinger.png\" alt=\"Heimerdinger\">"
+        pic: "<img src=\"assets/images/Heimerdinger.png\" alt=\"Heimerdinger\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     illaoi = {
         name: "Illaoi",
@@ -546,7 +695,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 90,
-        pic: "<img src=\"assets/images/Illaoi.png\" alt=\"Illaoi\">"
+        pic: "<img src=\"assets/images/Illaoi.png\" alt=\"Illaoi\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     irelia = {
         name: "Irelia",
@@ -560,7 +713,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Irelia.png\" alt=\"Irelia\">"
+        pic: "<img src=\"assets/images/Irelia.png\" alt=\"Irelia\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     ivern = {
         name: "Ivern",
@@ -574,7 +731,11 @@ var champions = [
         armorGrowth: 5,
         magicResistGrowth: 5,
         healthGrowth: 95,
-        pic: "<img src=\"assets/images/Ivern.png\" alt=\"Ivern\">"
+        pic: "<img src=\"assets/images/Ivern.png\" alt=\"Ivern\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     janna = {
         name: "Janna",
@@ -588,7 +749,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 86,
-        pic: "<img src=\"assets/images/Janna.png\" alt=\"Janna\">"
+        pic: "<img src=\"assets/images/Janna.png\" alt=\"Janna\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     jarvanIV = {
         name: "Jarvan IV",
@@ -602,7 +767,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/JarvanIV.png\" alt=\"JarvanIV\">"
+        pic: "<img src=\"assets/images/JarvanIV.png\" alt=\"JarvanIV\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     jax = {
         name: "Jax",
@@ -616,7 +785,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 85,
-        pic: "<img src=\"assets/images/Jax.png\" alt=\"Jax\">"
+        pic: "<img src=\"assets/images/Jax.png\" alt=\"Jax\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     jayce = {
         name: "Jayce",
@@ -630,7 +803,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Jayce.png\" alt=\"Jayce\">"
+        pic: "<img src=\"assets/images/Jayce.png\" alt=\"Jayce\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     jhin = {
         name: "Jhin",
@@ -644,7 +821,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 90,
-        pic: "<img src=\"assets/images/Jhin.png\" alt=\"Jhin\">"
+        pic: "<img src=\"assets/images/Jhin.png\" alt=\"Jhin\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     jinx = {
         name: "Jinx",
@@ -658,7 +839,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 3,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Jinx.png\" alt=\"Jinx\">"
+        pic: "<img src=\"assets/images/Jinx.png\" alt=\"Jinx\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     kaisa = {
         name: "Kai'Sa",
@@ -672,7 +857,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 93,
-        pic: "<img src=\"assets/images/Kaisa.png\" alt=\"Kaisa\">"
+        pic: "<img src=\"assets/images/Kaisa.png\" alt=\"Kaisa\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     kalista = {
         name: "Kalista",
@@ -686,7 +875,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 89,
-        pic: "<img src=\"assets/images/Kalista.png\" alt=\"Kalista\">"
+        pic: "<img src=\"assets/images/Kalista.png\" alt=\"Kalista\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     karma = {
         name: "Karma",
@@ -700,7 +893,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 90,
-        pic: "<img src=\"assets/images/Karma.png\" alt=\"Karma\">"
+        pic: "<img src=\"assets/images/Karma.png\" alt=\"Karma\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     karthus = {
         name: "Karthus",
@@ -714,7 +911,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 87,
-        pic: "<img src=\"assets/images/Karthus.png\" alt=\"Karthus\">"
+        pic: "<img src=\"assets/images/Karthus.png\" alt=\"Karthus\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     kassadin = {
         name: "Kassadin",
@@ -728,7 +929,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 90,
-        pic: "<img src=\"assets/images/Kassadin.png\" alt=\"Kassadin\">"
+        pic: "<img src=\"assets/images/Kassadin.png\" alt=\"Kassadin\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     katarina = {
         name: "Katarina",
@@ -742,7 +947,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 86,
-        pic: "<img src=\"assets/images/Katarina.png\" alt=\"Katarina\">"
+        pic: "<img src=\"assets/images/Katarina.png\" alt=\"Katarina\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     kayle = {
         name: "Kayle",
@@ -756,7 +965,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 89,
-        pic: "<img src=\"assets/images/Kayle.png\" alt=\"Kayle\">"
+        pic: "<img src=\"assets/images/Kayle.png\" alt=\"Kayle\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     kayn = {
         name: "Kayn",
@@ -770,7 +983,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Kayn.png\" alt=\"Kayn\">"
+        pic: "<img src=\"assets/images/Kayn.png\" alt=\"Kayn\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     kennen = {
         name: "Kennen",
@@ -784,7 +1001,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 83,
-        pic: "<img src=\"assets/images/Kennen.png\" alt=\"Kennen\">"
+        pic: "<img src=\"assets/images/Kennen.png\" alt=\"Kennen\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     khazix = {
         name: "Kha'Zix",
@@ -798,7 +1019,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 93,
-        pic: "<img src=\"assets/images/Khazix.png\" alt=\"Khazix\">"
+        pic: "<img src=\"assets/images/Khazix.png\" alt=\"Khazix\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     kindred = {
         name: "Kindred",
@@ -812,7 +1037,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Kindred.png\" alt=\"Kindred\">"
+        pic: "<img src=\"assets/images/Kindred.png\" alt=\"Kindred\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     kled = {
         name: "Kled",
@@ -826,7 +1055,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 3,
         healthGrowth: 84,
-        pic: "<img src=\"assets/images/Kled.png\" alt=\"Kled\">"
+        pic: "<img src=\"assets/images/Kled.png\" alt=\"Kled\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     kogmaw = {
         name: "Kog'Maw",
@@ -840,7 +1073,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Kogmaw.png\" alt=\"Kogmaw\">"
+        pic: "<img src=\"assets/images/KogMaw.png\" alt=\"Kogmaw\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     leblanc = {
         name: "LeBlanc",
@@ -854,7 +1091,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 93,
-        pic: "<img src=\"assets/images/LeBlanc.png\" alt=\"LeBlanc\">"
+        pic: "<img src=\"assets/images/Leblanc.png\" alt=\"LeBlanc\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     leeSin = {
         name: "Lee Sin",
@@ -868,7 +1109,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 3,
         healthGrowth: 84,
-        pic: "<img src=\"assets/images/LeeSin.png\" alt=\"LeeSin\">"
+        pic: "<img src=\"assets/images/LeeSin.png\" alt=\"LeeSin\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     leona = {
         name: "Leona",
@@ -882,7 +1127,11 @@ var champions = [
         armorGrowth: 5,
         magicResistGrowth: 4,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Leona.png\" alt=\"Leona\">"
+        pic: "<img src=\"assets/images/Leona.png\" alt=\"Leona\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     lissandra = {
         name: "Lissandra",
@@ -896,7 +1145,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 3,
         healthGrowth: 95,
-        pic: "<img src=\"assets/images/Lissandra.png\" alt=\"Lissandra\">"
+        pic: "<img src=\"assets/images/Lissandra.png\" alt=\"Lissandra\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     lucian = {
         name: "Lucian",
@@ -910,7 +1163,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 90,
-        pic: "<img src=\"assets/images/Lucian.png\" alt=\"Lucian\">"
+        pic: "<img src=\"assets/images/Lucian.png\" alt=\"Lucian\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     lulu = {
         name: "Lulu",
@@ -924,7 +1181,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 93,
-        pic: "<img src=\"assets/images/Lulu.png\" alt=\"Lulu\">"
+        pic: "<img src=\"assets/images/Lulu.png\" alt=\"Lulu\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     lux = {
         name: "Lux",
@@ -938,7 +1199,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 89,
-        pic: "<img src=\"assets/images/Lux.png\" alt=\"Lux\">"
+        pic: "<img src=\"assets/images/Lux.png\" alt=\"Lux\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     malphite = {
         name: "Malphite",
@@ -952,7 +1217,11 @@ var champions = [
         armorGrowth: 5,
         magicResistGrowth: 2,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Malphite.png\" alt=\"Malphite\">"
+        pic: "<img src=\"assets/images/Malphite.png\" alt=\"Malphite\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     malzahar = {
         name: "Malzahar",
@@ -966,7 +1235,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 93,
-        pic: "<img src=\"assets/images/Malzahar.png\" alt=\"Malzahar\">"
+        pic: "<img src=\"assets/images/Malzahar.png\" alt=\"Malzahar\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     maokai = {
         name: "Maokai",
@@ -980,7 +1253,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Maokai.png\" alt=\"Maokai\">"
+        pic: "<img src=\"assets/images/Maokai.png\" alt=\"Maokai\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     masterYi = {
         name: "Master Yi",
@@ -994,7 +1271,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 86,
-        pic: "<img src=\"assets/images/MasterYi.png\" alt=\"MasterYi\">"
+        pic: "<img src=\"assets/images/MasterYi.png\" alt=\"MasterYi\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     missFortune = {
         name: "Miss Fortune",
@@ -1008,7 +1289,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 1,
         healthGrowth: 94,
-        pic: "<img src=\"assets/images/MissFortune.png\" alt=\"MissFortune\">"
+        pic: "<img src=\"assets/images/MissFortune.png\" alt=\"MissFortune\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     mordekaiser = {
         name: "Mordekaiser",
@@ -1022,7 +1307,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 86,
-        pic: "<img src=\"assets/images/Mordekaiser.png\" alt=\"Mordekaiser\">"
+        pic: "<img src=\"assets/images/Mordekaiser.png\" alt=\"Mordekaiser\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     morgana = {
         name: "Morgana",
@@ -1036,7 +1325,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 3,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Morgana.png\" alt=\"Morgana\">"
+        pic: "<img src=\"assets/images/Morgana.png\" alt=\"Morgana\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     nami = {
         name: "Nami",
@@ -1050,7 +1343,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 3,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Nami.png\" alt=\"Nami\">"
+        pic: "<img src=\"assets/images/Nami.png\" alt=\"Nami\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     nasus = {
         name: "Nasus",
@@ -1064,7 +1361,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 3,
         healthGrowth: 90,
-        pic: "<img src=\"assets/images/Nasus.png\" alt=\"Nasus\">"
+        pic: "<img src=\"assets/images/Nasus.png\" alt=\"Nasus\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     nautilus = {
         name: "Nautilus",
@@ -1078,7 +1379,11 @@ var champions = [
         armorGrowth: 5,
         magicResistGrowth: 4,
         healthGrowth: 94,
-        pic: "<img src=\"assets/images/Nautilus.png\" alt=\"Nautilus\">"
+        pic: "<img src=\"assets/images/Nautilus.png\" alt=\"Nautilus\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     nidalee = {
         name: "Nidalee",
@@ -1092,7 +1397,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 3,
         healthGrowth: 94,
-        pic: "<img src=\"assets/images/Nidalee.png\" alt=\"Nidalee\">"
+        pic: "<img src=\"assets/images/Nidalee.png\" alt=\"Nidalee\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     nocturne = {
         name: "Nocturne",
@@ -1106,7 +1415,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 86,
-        pic: "<img src=\"assets/images/Nocturne.png\" alt=\"Nocturne\">"
+        pic: "<img src=\"assets/images/Nocturne.png\" alt=\"Nocturne\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     nunu = {
         name: "Nunu",
@@ -1120,7 +1433,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Nunu.png\" alt=\"Nunu\">"
+        pic: "<img src=\"assets/images/Nunu.png\" alt=\"Nunu\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     olaf = {
         name: "Olaf",
@@ -1134,7 +1451,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 93,
-        pic: "<img src=\"assets/images/Olaf.png\" alt=\"Olaf\">"
+        pic: "<img src=\"assets/images/Olaf.png\" alt=\"Olaf\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     orianna = {
         name: "Orianna",
@@ -1148,7 +1469,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 3,
         healthGrowth: 86,
-        pic: "<img src=\"assets/images/Orianna.png\" alt=\"Orianna\">"
+        pic: "<img src=\"assets/images/Orianna.png\" alt=\"Orianna\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     ornn = {
         name: "Ornn",
@@ -1162,7 +1487,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 94,
-        pic: "<img src=\"assets/images/Ornn.png\" alt=\"Ornn\">"
+        pic: "<img src=\"assets/images/Ornn.png\" alt=\"Ornn\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     pantheon = {
         name: "Pantheon",
@@ -1176,7 +1505,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 1,
         healthGrowth: 89,
-        pic: "<img src=\"assets/images/Pantheon.png\" alt=\"Pantheon\">"
+        pic: "<img src=\"assets/images/Pantheon.png\" alt=\"Pantheon\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     poppy = {
         name: "Poppy",
@@ -1190,7 +1523,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 3,
         healthGrowth: 87,
-        pic: "<img src=\"assets/images/Poppy.png\" alt=\"Poppy\">"
+        pic: "<img src=\"assets/images/Poppy.png\" alt=\"Poppy\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     pyke = {
         name: "Pyke",
@@ -1204,7 +1541,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 2,
         healthGrowth: 94,
-        pic: "<img src=\"assets/images/Pyke.png\" alt=\"Pyke\">"
+        pic: "<img src=\"assets/images/Pyke.png\" alt=\"Pyke\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     quinn = {
         name: "Quinn",
@@ -1218,7 +1559,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 1,
         healthGrowth: 95,
-        pic: "<img src=\"assets/images/Quinn.png\" alt=\"Quinn\">"
+        pic: "<img src=\"assets/images/Quinn.png\" alt=\"Quinn\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     rakan = {
         name: "Rakan",
@@ -1232,7 +1577,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 5,
         healthGrowth: 86,
-        pic: "<img src=\"assets/images/Rakan.png\" alt=\"Rakan\">"
+        pic: "<img src=\"assets/images/Rakan.png\" alt=\"Rakan\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     rammus = {
         name: "Rammus",
@@ -1246,7 +1595,11 @@ var champions = [
         armorGrowth: 6,
         magicResistGrowth: 2,
         healthGrowth: 89,
-        pic: "<img src=\"assets/images/Rammus.png\" alt=\"Rammus\">"
+        pic: "<img src=\"assets/images/Rammus.png\" alt=\"Rammus\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     reksai = {
         name: "Rek'Sai",
@@ -1260,7 +1613,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 3,
         healthGrowth: 89,
-        pic: "<img src=\"assets/images/RekSai.png\" alt=\"RekSai\">"
+        pic: "<img src=\"assets/images/RekSai.png\" alt=\"RekSai\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     renekton = {
         name: "Renekton",
@@ -1274,7 +1631,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 2,
         healthGrowth: 93,
-        pic: "<img src=\"assets/images/Renekton.png\" alt=\"Renekton\">"
+        pic: "<img src=\"assets/images/Renekton.png\" alt=\"Renekton\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     rengar = {
         name: "Rengar",
@@ -1288,7 +1649,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 2,
         healthGrowth: 86,
-        pic: "<img src=\"assets/images/Rengar.png\" alt=\"Rengar\">"
+        pic: "<img src=\"assets/images/Rengar.png\" alt=\"Rengar\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     riven = {
         name: "Riven",
@@ -1302,7 +1667,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 2,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Riven.png\" alt=\"Riven\">"
+        pic: "<img src=\"assets/images/Riven.png\" alt=\"Riven\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     rumble = {
         name: "Rumble",
@@ -1316,7 +1685,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 94,
-        pic: "<img src=\"assets/images/Rumble.png\" alt=\"Rumble\">"
+        pic: "<img src=\"assets/images/Rumble.png\" alt=\"Rumble\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     ryze = {
         name: "Ryze",
@@ -1330,7 +1703,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 89,
-        pic: "<img src=\"assets/images/Ryze.png\" alt=\"Ryze\">"
+        pic: "<img src=\"assets/images/Ryze.png\" alt=\"Ryze\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     sejuani = {
         name: "Sejuani",
@@ -1344,7 +1721,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 3,
         healthGrowth: 94,
-        pic: "<img src=\"assets/images/Sejuani.png\" alt=\"Sejuani\">"
+        pic: "<img src=\"assets/images/Sejuani.png\" alt=\"Sejuani\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     shaco = {
         name: "Shaco",
@@ -1358,7 +1739,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Shaco.png\" alt=\"Shaco\">"
+        pic: "<img src=\"assets/images/Shaco.png\" alt=\"Shaco\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     shen = {
         name: "Shen",
@@ -1372,7 +1757,11 @@ var champions = [
         armorGrowth: 5,
         magicResistGrowth: 4,
         healthGrowth: 90,
-        pic: "<img src=\"assets/images/Shen.png\" alt=\"Shen\">"
+        pic: "<img src=\"assets/images/Shen.png\" alt=\"Shen\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     shyvana = {
         name: "Shyvana",
@@ -1386,7 +1775,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Shyvana.png\" alt=\"Shyvana\">"
+        pic: "<img src=\"assets/images/Shyvana.png\" alt=\"Shyvana\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     singed = {
         name: "Singed",
@@ -1400,7 +1793,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 2,
         healthGrowth: 92,
-        pic: "<img src=\"assets/images/Singed.png\" alt=\"Singed\">"
+        pic: "<img src=\"assets/images/Singed.png\" alt=\"Singed\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     sion = {
         name: "Sion",
@@ -1414,7 +1811,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 4,
         healthGrowth: 94,
-        pic: "<img src=\"assets/images/Sion.png\" alt=\"Sion\">"
+        pic: "<img src=\"assets/images/Sion.png\" alt=\"Sion\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     sivir = {
         name: "Sivir",
@@ -1428,7 +1829,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 92,
-        pic: "<img src=\"assets/images/Sivir.png\" alt=\"Sivir\">"
+        pic: "<img src=\"assets/images/Sivir.png\" alt=\"Sivir\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     skarner = {
         name: "Skarner",
@@ -1442,7 +1847,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 2,
         healthGrowth: 93,
-        pic: "<img src=\"assets/images/Skarner.png\" alt=\"Skarner\">"
+        pic: "<img src=\"assets/images/Skarner.png\" alt=\"Skarner\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     sona = {
         name: "Sona",
@@ -1456,7 +1865,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 2,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Sona.png\" alt=\"Sona\">"
+        pic: "<img src=\"assets/images/Sona.png\" alt=\"Sona\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     soraka = {
         name: "Soraka",
@@ -1470,7 +1883,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 3,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Soraka.png\" alt=\"Soraka\">"
+        pic: "<img src=\"assets/images/Soraka.png\" alt=\"Soraka\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     swain = {
         name: "Swain",
@@ -1484,7 +1901,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Swain.png\" alt=\"Swain\">"
+        pic: "<img src=\"assets/images/Swain.png\" alt=\"Swain\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     syndra = {
         name: "Syndra",
@@ -1498,7 +1919,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 3,
         healthGrowth: 92,
-        pic: "<img src=\"assets/images/Syndra.png\" alt=\"Syndra\">"
+        pic: "<img src=\"assets/images/Syndra.png\" alt=\"Syndra\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     tahmKench = {
         name: "Tahm Kench",
@@ -1512,7 +1937,11 @@ var champions = [
         armorGrowth: 5,
         magicResistGrowth: 4,
         healthGrowth: 94,
-        pic: "<img src=\"assets/images/TahmKench.png\" alt=\"TahmKench\">"
+        pic: "<img src=\"assets/images/TahmKench.png\" alt=\"TahmKench\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     taliyah = {
         name: "Taliyah",
@@ -1526,7 +1955,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Taliyah.png\" alt=\"Taliyah\">"
+        pic: "<img src=\"assets/images/Taliyah.png\" alt=\"Taliyah\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     talon = {
         name: "Talon",
@@ -1540,7 +1973,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 2,
         healthGrowth: 84,
-        pic: "<img src=\"assets/images/Talon.png\" alt=\"Talon\">"
+        pic: "<img src=\"assets/images/Talon.png\" alt=\"Talon\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     taric = {
         name: "Taric",
@@ -1554,7 +1991,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 3,
         healthGrowth: 92,
-        pic: "<img src=\"assets/images/Taric.png\" alt=\"Taric\">"
+        pic: "<img src=\"assets/images/Taric.png\" alt=\"Taric\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     thresh = {
         name: "Thresh",
@@ -1568,7 +2009,11 @@ var champions = [
         armorGrowth: 5,
         magicResistGrowth: 3,
         healthGrowth: 92,
-        pic: "<img src=\"assets/images/Thresh.png\" alt=\"Thresh\">"
+        pic: "<img src=\"assets/images/Thresh.png\" alt=\"Thresh\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     tristana = {
         name: "Tristana",
@@ -1582,7 +2027,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 2,
         healthGrowth: 86,
-        pic: "<img src=\"assets/images/Tristana.png\" alt=\"Tristana\">"
+        pic: "<img src=\"assets/images/Tristana.png\" alt=\"Tristana\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     trundle = {
         name: "Trundle",
@@ -1596,7 +2045,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 90,
-        pic: "<img src=\"assets/images/Trundle.png\" alt=\"Trundle\">"
+        pic: "<img src=\"assets/images/Trundle.png\" alt=\"Trundle\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     tryndamere = {
         name: "Tryndamere",
@@ -1610,7 +2063,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 85,
-        pic: "<img src=\"assets/images/Tryndamere.png\" alt=\"Tryndamere\">"
+        pic: "<img src=\"assets/images/Tryndamere.png\" alt=\"Tryndamere\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     twistedFate = {
         name: "Twisted Fate",
@@ -1624,7 +2081,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 92,
-        pic: "<img src=\"assets/images/TwistedFate.png\" alt=\"TwistedFate\">"
+        pic: "<img src=\"assets/images/TwistedFate.png\" alt=\"TwistedFate\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     twitch = {
         name: "Twitch",
@@ -1638,7 +2099,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Twitch.png\" alt=\"Twitch\">"
+        pic: "<img src=\"assets/images/Twitch.png\" alt=\"Twitch\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     udyr = {
         name: "Udyr",
@@ -1652,7 +2117,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 3,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Udyr.png\" alt=\"Udyr\">"
+        pic: "<img src=\"assets/images/Udyr.png\" alt=\"Udyr\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     urgot = {
         name: "Urgot",
@@ -1666,7 +2135,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 85,
-        pic: "<img src=\"assets/images/Urgot.png\" alt=\"Urgot\">"
+        pic: "<img src=\"assets/images/Urgot.png\" alt=\"Urgot\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     varus = {
         name: "Varus",
@@ -1680,7 +2153,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 2,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Varus.png\" alt=\"Varus\">"
+        pic: "<img src=\"assets/images/Varus.png\" alt=\"Varus\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     vayne = {
         name: "Vayne",
@@ -1694,7 +2171,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 2,
         healthGrowth: 87,
-        pic: "<img src=\"assets/images/Vayne.png\" alt=\"Vayne\">"
+        pic: "<img src=\"assets/images/Vayne.png\" alt=\"Vayne\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     veigar = {
         name: "Veigar",
@@ -1708,7 +2189,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 92,
-        pic: "<img src=\"assets/images/Veigar.png\" alt=\"Veigar\">"
+        pic: "<img src=\"assets/images/Veigar.png\" alt=\"Veigar\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     velkoz = {
         name: "Vel'Koz",
@@ -1722,7 +2207,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 85,
-        pic: "<img src=\"assets/images/Velkoz.png\" alt=\"Velkoz\">"
+        pic: "<img src=\"assets/images/Velkoz.png\" alt=\"Velkoz\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     vi = {
         name: "Vi",
@@ -1736,7 +2225,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 3,
         healthGrowth: 86,
-        pic: "<img src=\"assets/images/Vi.png\" alt=\"Vi\">"
+        pic: "<img src=\"assets/images/Vi.png\" alt=\"Vi\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     viktor = {
         name: "Viktor",
@@ -1750,7 +2243,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 2,
         healthGrowth: 90,
-        pic: "<img src=\"assets/images/Viktor.png\" alt=\"Viktor\">"
+        pic: "<img src=\"assets/images/Viktor.png\" alt=\"Viktor\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     vladimir = {
         name: "Vladimir",
@@ -1764,7 +2261,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Vladimir.png\" alt=\"Vladimir\">"
+        pic: "<img src=\"assets/images/Vladimir.png\" alt=\"Vladimir\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     volibear = {
         name: "Volibear",
@@ -1778,7 +2279,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 3,
         healthGrowth: 94,
-        pic: "<img src=\"assets/images/Volibear.png\" alt=\"Volibear\">"
+        pic: "<img src=\"assets/images/Volibear.png\" alt=\"Volibear\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     warwick = {
         name: "Warwick",
@@ -1792,7 +2297,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 2,
         healthGrowth: 92,
-        pic: "<img src=\"assets/images/Warwick.png\" alt=\"Warwick\">"
+        pic: "<img src=\"assets/images/Warwick.png\" alt=\"Warwick\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     wukong = {
         name: "Wukong",
@@ -1806,7 +2315,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 3,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/MonkeyKing.png\" alt=\"Wukong\">"
+        pic: "<img src=\"assets/images/MonkeyKing.png\" alt=\"Wukong\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     xayah = {
         name: "Xayah",
@@ -1820,7 +2333,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Xayah.png\" alt=\"Xayah\">"
+        pic: "<img src=\"assets/images/Xayah.png\" alt=\"Xayah\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     xerath = {
         name: "Xerath",
@@ -1834,7 +2351,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 91,
-        pic: "<img src=\"assets/images/Xerath.png\" alt=\"Xerath\">"
+        pic: "<img src=\"assets/images/Xerath.png\" alt=\"Xerath\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     xinZhao = {
         name: "Xin Zhao",
@@ -1848,7 +2369,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/XinZhao.png\" alt=\"XinZhao\">"
+        pic: "<img src=\"assets/images/XinZhao.png\" alt=\"XinZhao\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     yasuo = {
         name: "Yasuo",
@@ -1862,7 +2387,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 2,
         healthGrowth: 87,
-        pic: "<img src=\"assets/images/Yasuo.png\" alt=\"Yasuo\">"
+        pic: "<img src=\"assets/images/Yasuo.png\" alt=\"Yasuo\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     yorick = {
         name: "Yorick",
@@ -1876,7 +2405,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 2,
         healthGrowth: 93,
-        pic: "<img src=\"assets/images/Yorick.png\" alt=\"Yorick\">"
+        pic: "<img src=\"assets/images/Yorick.png\" alt=\"Yorick\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     zac = {
         name: "Zac",
@@ -1890,7 +2423,11 @@ var champions = [
         armorGrowth: 4,
         magicResistGrowth: 4,
         healthGrowth: 92,
-        pic: "<img src=\"assets/images/Zac.png\" alt=\"Zac\">"
+        pic: "<img src=\"assets/images/Zac.png\" alt=\"Zac\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     zed = {
         name: "Zed",
@@ -1904,7 +2441,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 2,
         healthGrowth: 88,
-        pic: "<img src=\"assets/images/Zed.png\" alt=\"Zed\">"
+        pic: "<img src=\"assets/images/Zed.png\" alt=\"Zed\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     ziggs = {
         name: "Ziggs",
@@ -1918,7 +2459,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 93,
-        pic: "<img src=\"assets/images/Ziggs.png\" alt=\"Ziggs\">"
+        pic: "<img src=\"assets/images/Ziggs.png\" alt=\"Ziggs\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     zilean = {
         name: "Zilean",
@@ -1932,7 +2477,11 @@ var champions = [
         armorGrowth: 3,
         magicResistGrowth: 3,
         healthGrowth: 89,
-        pic: "<img src=\"assets/images/Zilean.png\" alt=\"Zilean\">"
+        pic: "<img src=\"assets/images/Zilean.png\" alt=\"Zilean\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     },
     zoe = {
         name: "Zoe",
@@ -1946,7 +2495,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 2,
         healthGrowth: 90,
-        pic: "<img src=\"assets/images/Zoe.png\" alt=\"Zoe\">"
+        pic: "<img src=\"assets/images/Zoe.png\" alt=\"Zoe\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.oga");
+            selectAudio.play();
+        }
     },
     zyra = {
         name: "Zyra",
@@ -1960,7 +2513,11 @@ var champions = [
         armorGrowth: 2,
         magicResistGrowth: 3,
         healthGrowth: 87,
-        pic: "<img src=\"assets/images/Zyra.png\" alt=\"Zyra\">"
+        pic: "<img src=\"assets/images/Zyra.png\" alt=\"Zyra\">",
+        audio: function() {
+            var selectAudio = new Audio("assets/audio/" + this.name + "_Select.ogx");
+            selectAudio.play();
+        }
     }
 ]
 
@@ -2000,7 +2557,7 @@ var items = [
         name: "Magic Mantle",
         cost: 400,
         magicResist: 25,
-        pic: "<img src=\"assets/images/magicMantle.png\" alt=\"MagicMantle\">"
+        pic: "<img src=\"assets/images/MagicMantle.png\" alt=\"MagicMantle\">"
     },
     bfSword = {
         name: "B.F. Sword",
@@ -2067,6 +2624,8 @@ var itemAttribute = 0;
 var victory = new Audio("assets/audio/Victory.mp3");
 var kill = new Audio("assets/audio/Kill.mp3");
 var defeat = new Audio("assets/audio/Defeat.mp3");
+var buySound = new Audio("assets/audio/Buy.wav");
+var attackSound = new Audio("assets/audio/Attack.wav");
 
 function userHealth() {
     if (userCurrentHealth / userTotalHealth > .9) {
@@ -2169,7 +2728,7 @@ $(document).on("click", ".champion-button", function () {
 });
 
 $("#lock").on("click", function () {
-    champions[userIndex].audio.play();
+    champions[userIndex].audio();
     $("#startAlert").text("");
     userAttack = champions[userIndex].attack;
     userMagic = champions[userIndex].magic
@@ -2248,24 +2807,28 @@ $("#buy").on("click", function () {
             userAttack = userAttack + items[itemAttribute].attackDamage;
             gold = gold - items[itemAttribute].cost;
             userItems.push(items[itemAttribute]);
+            buySound.play();
             $("#userItems").append(items[itemAttribute].pic);
         } else if (items[itemAttribute].hasOwnProperty("magicDamage")) {
             $("#shopAlert").html("You have purchased a " + items[itemAttribute].name + ". Your magic has been increased by " + items[itemAttribute].magicDamage + ".");
             userMagic = userMagic + items[itemAttribute].magicDamage;
             gold = gold - items[itemAttribute].cost;
             userItems.push(items[itemAttribute]);
+            buySound.play();
             $("#userItems").append(items[itemAttribute].pic);
         } else if (items[itemAttribute].hasOwnProperty("armor")) {
             $("#shopAlert").html("You have purchased a " + items[itemAttribute].name + ". Your armor has been increased by " + items[itemAttribute].armorAdded + ".");
             userArmor = userArmor + items[itemAttribute].armor;
             gold = gold - items[itemAttribute].cost;
             userItems.push(items[itemAttribute]);
+            buySound.play();
             $("#userItems").append(items[itemAttribute].pic);
         } else if (items[itemAttribute].hasOwnProperty("magicResist")) {
             $("#shopAlert").html("You have purchased a " + items[itemAttribute].name + ". Your magic resist has been increased by " + items[itemAttribute].magicResist + ".");
             userMagicResist = userMagicResist + items[itemAttribute].magicResist;
             gold = gold - items[itemAttribute].cost;
             userItems.push(items[itemAttribute]);
+            buySound.play();
             $("#userItems").append(items[itemAttribute].pic);
         } else if (items[itemAttribute].hasOwnProperty("healthAdded")) {
             $("#shopAlert").html("You have purchased a " + items[itemAttribute].name + ". Your health has been increased by " + items[itemAttribute].healthAdded + ".");
@@ -2273,6 +2836,7 @@ $("#buy").on("click", function () {
             userCurrentHealth = userCurrentHealth + items[itemAttribute].healthAdded;
             gold = gold - items[itemAttribute].cost;
             userItems.push(items[itemAttribute]);
+            buySound.play();
             $("#userItems").append(items[itemAttribute].pic);
         }
         championInfo();
@@ -2318,6 +2882,7 @@ $("#attack").on("click", function () {
     $("#shopAlert").text("");
     $("#battleText").text("");
     $("#attack").addClass("hide").removeClass("show");
+    attackSound.play();
     setTimeout(function () {
         setTimeout(function () { 
         var damageDealt = 0;
