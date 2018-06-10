@@ -2916,7 +2916,7 @@ $("#buy").on("click", function () {
             $("#userItems").append(items[itemAttribute].pic);
         } else if (items[itemAttribute].hasOwnProperty("armorAdded")) {
             $("#shopAlert").html("You have purchased a " + items[itemAttribute].name + ". Your armor has been increased by " + items[itemAttribute].armorAdded + ".");
-            userArmor = userArmor + items[itemAttribute].armor;
+            userArmor = userArmor + items[itemAttribute].armorAdded;
             gold = gold - items[itemAttribute].cost;
             userItems.push(items[itemAttribute]);
             buySound.play();
