@@ -2522,6 +2522,7 @@ var champions = [
     }
 ]
 
+var defeatedChampions = [];
 
 // array to hold all of the items and their attributes as well as their picture
 var items = [
@@ -2954,7 +2955,7 @@ $("#start").on("click", function () {
         errorSound.play();
     } else {
         enemyChampionIndex = Math.floor(Math.random() * champions.length);
-        while (enemyChampionIndex == userIndex) {
+        while (enemyChampionIndex == userIndex || defeatedChampions.indexOf(champions[enemyChampionIndex].name) > -1) {
             enemyChampionIndex = Math.floor(Math.random() * champions.length);
         }
         $("#enemyHealth").removeClass("hide");
@@ -3026,7 +3027,7 @@ $("#attack").on("click", function () {
             $("#battleText").html("Your attack killed " + enemyChampion + ". You have been rewarded with 500 gold and 100 experience. Click Battle Opponent when you are ready for your next challenge.");
             gold = gold + 500;
             experience = experience + 100;
-            champions.splice(enemyChampionIndex, 1);
+            defeatedChampions.push(champions[enemyChampionIndex].name);
             if (experience >= 3000) {
                 var newLevel = 10;
                 setTimeout(function () {
